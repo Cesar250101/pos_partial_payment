@@ -64,9 +64,9 @@
             <field name="arch" type="xml">
                 <xpath expr="//page[@name='sales_purchases']" position="after">
                     <page name="credito" string="Crédito a Clientes">
-                        <field name="allow_credit"/>
-                        <field name="allow_over_limit"/>
-                        <field name="limit_credit"/>
+                        <field name="allow_credit" string="Permitir Crédito"/>
+                        <field name="allow_over_limit" string="Permitir por encima del límite"/>
+                        <field name="fecha_bloque_hasta" string="Desbloqueo hasta"/>
                         <field name="limit_credit" attrs="{'invisible': [('allow_over_limit','=', False)]}"/>                    
                     </page>
                 </xpath>  
