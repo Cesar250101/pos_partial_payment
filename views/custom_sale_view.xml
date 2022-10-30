@@ -62,7 +62,6 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="point_of_sale.view_partner_property_form"/>
             <field name="arch" type="xml">
-                <field name="barcode" position="after">
                 <xpath expr="//page[@name='sales_purchases']" position="after">
                     <page name="credito" string="Crédito a Clientes">
                         <field name="allow_credit"/>
@@ -71,7 +70,6 @@
                         <field name="limit_credit" attrs="{'invisible': [('allow_over_limit','=', False)]}"/>                    
                     </page>
                 </xpath>  
-
         	</field>
         </record>
 
